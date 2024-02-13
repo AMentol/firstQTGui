@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TasksOnDay</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #191919;
+font-family: Montserrat</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QFrame" name="taskscount">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 7px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="activetask">
+             <property name="styleSheet">
+              <string notr="true">color: #F6F6F6;
+font-weight: bold;
+font-size: 20pt;
+background-color: None;</string>
+             </property>
+             <property name="text">
+              <string>Активные задачи:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="donetask">
+             <property name="styleSheet">
+              <string notr="true">color: #F6F6F6;
+font-weight: bold;
+font-size: 20pt;
+background-color: None;</string>
+             </property>
+             <property name="text">
+              <string>Выполненные задачи:</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QFrame" name="count">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="activecount">
+              <property name="styleSheet">
+               <string notr="true">color: #F6F6F6;
+font-size: 18pt;
+background-color: None;</string>
+              </property>
+              <property name="text">
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="donecount">
+              <property name="styleSheet">
+               <string notr="true">color: #F6F6F6;
+font-size: 18pt;
+background-color: None;</string>
+              </property>
+              <property name="text">
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QPushButton" name="btn_delete">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+color: #F6F6F6;
+background-color: #2A2B2B;
+border-radius: 20px;
+font-size: 15pt;
+width: 200px;
+height: 50px;
+}
+QPushButton:hover {
+background-color: rgba(255,255, 255, 40);
+}
+QPushButton:pressed {
+background-color: rgba(255,255, 255, 70);
+}</string>
+          </property>
+          <property name="text">
+           <string>Удалить задачу</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_add">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+color: #F6F6F6;
+background-color: #2A2B2B;
+border-radius: 20px;
+font-size: 15pt;
+width: 200px;
+height: 50px;
+}
+QPushButton:hover {
+background-color: rgba(255,255, 255, 40);
+}
+QPushButton:pressed {
+background-color: rgba(255,255, 255, 70);
+}</string>
+          </property>
+          <property name="text">
+           <string>Добавить задачу</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableView" name="tableView">
+      <property name="styleSheet">
+       <string notr="true">QTableView {
+background-color: rgba(255, 255, 255, 90);
+border: 1px solid rgba(255, 255, 255, 30);
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+QTableView::section {
+background-color: rgba(53, 53, 53);
+color: white;
+border: none;
+height: 50px;
+font-size: 14pt;;
+}
+QTableView::item {
+border-style: none;
+border-bottom: rgba(255, 255, 255, 50);
+}
+QTableView::item:selected {
+border: none;
+color: rgba(255, 255, 255);
+backgroung-color: rgba(255, 255, 255, 50);
+}</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

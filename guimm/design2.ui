@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>240</width>
+    <height>269</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NewTask</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #191919;
+font-family: Montserrat</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 7px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="lbl_newtask">
+        <property name="styleSheet">
+         <string notr="true">color: #F6F6F6;
+font-weight: bold;
+font-size: 20pt;
+background-color: None;
+border: none;</string>
+        </property>
+        <property name="text">
+         <string>Новая задача</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="data">
+        <property name="styleSheet">
+         <string notr="true">color: #F6F6F6;
+font-size: 18pt;
+padding-left: 5px;
+padding-top: 10px;
+padding-bottom: 10px;</string>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="taskdesc">
+        <property name="styleSheet">
+         <string notr="true">padding: 10px;
+color: #F6F6F6;
+font-size: 9pt;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Название задачи...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_savetask">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: #F6F6F6;
+background-color: #2A2B2B;
+border-radius: 20px;
+font-size: 15pt;
+width: 200px;
+height: 50px;
+}
+QPushButton:hover {
+background-color: rgba(255,255, 255, 40);
+}
+QPushButton:pressed {
+background-color: rgba(255,255, 255, 70);
+}</string>
+        </property>
+        <property name="text">
+         <string>Сохранить задачу</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
